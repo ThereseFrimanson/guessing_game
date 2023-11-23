@@ -47,7 +47,7 @@ public class Guesser{
                        low + " and "  + high);
     System.out.println("I'm going to ask a few questions in order " +
                        "to guess the number.");
-    System.out.println("Please answer T for true, and F for false.\n");
+    System.out.println("Please reply T for true, and F for false.\n");
   }
 
   /*
@@ -66,10 +66,9 @@ public class Guesser{
     // As long as it is not a valid reply (one of "T" and "F")
     // write an error message, and read a new reply.
     // When you have gotten a valid reply, return it.
-    Scanner scanner = new Scanner(System.in);
-    String answer = scanner.nextLine();
-    if (!answer.equalsIgnoreCase("T") || !answer.equalsIgnoreCase("F")){
-      return "You need to answer T or F.";
+    reply = System.console().readLine();
+    while (!reply.equalsIgnoreCase("T") || !reply.equalsIgnoreCase("F")){
+      return "You need to reply T or F.";
     }
     return reply;
   }
@@ -81,7 +80,7 @@ public class Guesser{
       // Set next guess to the middle between
       // current low and current high
       middle=low + (high-low)/2;
-
+      
       System.out.println("Is the number less than or equal to " +
                          middle + "?");
       String reply = getReply();
@@ -98,10 +97,10 @@ public class Guesser{
     }
     // When low has met high, we don't enter the loop
     // and we have found the number
-    answer(low, i);
+    reply(low, i);
   }
 
-  private void answer(int guess, int numberOfGuesses){
+  private void reply(int guess, int numberOfGuesses){
     System.out.println("You were thinking about " +
                        guess +
                        " (took me " + numberOfGuesses +
