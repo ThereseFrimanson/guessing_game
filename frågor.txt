@@ -1,4 +1,8 @@
 När använder man add respektive commit? - Du använder add när du vill lägga till något i stage area. Commit använder du när vill bekräfta ändringarna du gjort i ditt lokala repository.
-Vad är pull respektive push? pull är när du vill hämta något från tex github. Push använder du för att skicka det till github.
+// nedan är nya svar på push och pull.
+Vad är pull respektive push? 
+- Pull: När man gör pull i git så hämtar man ändringar från ett fjärr-repo till sitt lokala repo. Så man får de senaste ändringarna till sig. Väldigt bra när man är flera som jobbar med samma projekt/kod. 
+- Push: Det är när du vill skicka upp dina lokala ändringar till fjärr-repot så andra kan hämta ner dina ändringar till sina lokala repositories. 
+
 När använder man logg respektive status? Log används när du vill se historiken på vad som har ändats och när. Status används för att se vilka ändringar som inte har commitats ännu och status på working area. 
 Vad är en Git-branch och varför är de viktiga? En gitbranch är viktig för att man ska kunna ha olika l grenar(lijer) av utveckling av olika användare som gör att man kan jobba på samma sak samtidigt utan att det påverkar huvudkoden. Effektiviserar jobbet. 
